@@ -5,6 +5,8 @@ import jakarta.validation.constraints.Pattern;
 
 public record DadosEndereco(
 		
+//Os dados que não estão anotados com bean validation são opcionais.
+		
 		@NotBlank
 		String logradouro, 
 		
@@ -26,7 +28,5 @@ public record DadosEndereco(
 		
 		
 		String complemento) {
-	
-	
 
 }
